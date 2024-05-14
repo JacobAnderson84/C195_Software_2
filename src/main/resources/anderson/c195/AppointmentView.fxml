@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anderson.c195.controller.AppointmentController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="105.0" prefHeight="273.0" prefWidth="965.0">
+        <columns>
+          <TableColumn fx:id="mainAppId" minWidth="-1.0" prefWidth="60.0" text="AppID" />
+          <TableColumn fx:id="mainTitle" minWidth="-1.0" prefWidth="73.0" text="Title" />
+            <TableColumn fx:id="mainDescription" minWidth="-1.0" prefWidth="98.0" text="Description" />
+            <TableColumn fx:id="mainLocation" minWidth="-1.0" prefWidth="79.0" text="Location" />
+            <TableColumn fx:id="mainContact" minWidth="-1.0" text="Contact" />
+            <TableColumn fx:id="mainType" minWidth="-1.0" prefWidth="85.0" text="Type" />
+            <TableColumn fx:id="mainStartDate" minWidth="-1.0" prefWidth="79.0" text="Start Date" />
+            <TableColumn fx:id="mainStartTime" minWidth="-1.0" text="Start Time" />
+            <TableColumn fx:id="mainEndDate" minWidth="-1.0" text="End Date" />
+            <TableColumn fx:id="mainEndTime" minWidth="-1.0" prefWidth="85.0" text="End Time" />
+            <TableColumn fx:id="mainCustomerId" minWidth="-1.0" prefWidth="90.0" text="Customer ID" />
+            <TableColumn fx:id="mainUserId" minWidth="-1.0" prefWidth="75.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="46.0" prefHeight="26.0" prefWidth="91.0" text="Current Date : " />
+      <Label fx:id="displayCurrentDate" layoutX="132.0" layoutY="51.0" />
+      <RadioButton layoutX="357.0" layoutY="51.0" mnemonicParsing="false" onAction="#onActionAllRadioButton" selected="true" text="All Appointments">
+         <toggleGroup>
+            <ToggleGroup fx:id="appointmentByMonthAndWeek" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="690.0" layoutY="51.0" mnemonicParsing="false" onAction="#onActionMonthRadioButton" text="Appointments by Month" toggleGroup="$appointmentByMonthAndWeek" />
+      <Button layoutX="31.0" layoutY="404.0" mnemonicParsing="false" onAction="#onActionAddAppointment" prefHeight="40.0" prefWidth="130.0" text="Add Appointment" />
+      <Button layoutX="188.0" layoutY="404.0" mnemonicParsing="false" onAction="#onActionUpdateAppointment" prefHeight="40.0" prefWidth="130.0" text="Update Appointment" />
+      <Button layoutX="341.0" layoutY="404.0" mnemonicParsing="false" onAction="#onActionDeleteAppointment" prefHeight="40.0" prefWidth="130.0" text="Delete Appointment" />
+      <Button layoutX="670.0" layoutY="404.0" mnemonicParsing="false" onAction="#onActionViewReports" prefHeight="40.0" prefWidth="130.0" text="View Reports" />
+      <Button layoutX="811.0" layoutY="404.0" mnemonicParsing="false" onAction="#onActionViewCustomers" prefHeight="40.0" prefWidth="130.0" text="View Customers" />
+      <RadioButton layoutX="510.0" layoutY="51.0" mnemonicParsing="false" onAction="#onActionWeekRadioButton" text="Appointments by Week" toggleGroup="$appointmentByMonthAndWeek" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+****DBClientApp****
+
+This is a scheduling application that uses Java And MySQL Workbench.
+Author: Jacob Anderson
+Contact Information: jan1428@wgu.edu
+Application Version: QAM2
+Date: 3/4/2023
+**technologies**
+IDE: IntelliJ IDEA 2022.3.1 (Community Edition)
+JDK: JDK 17.0.5 with JavaFX 17.0.2
+MySQL Driver: mysql-connector-java-8.0.25
+
+How to Run: Launch application from your IDE.
+            Login in with username-"test" and password-"test"
+            or Login in with username-"admin" and password-"admin"
+            From there you can add,update or delete appointments, as well as view reports and customers.
+            Under customers you can also add,update or delete customers.
+Description of additional report : For my additional report I chose to show all customers for each country. The user can select a country from a combo box.
+                                   A text field will be populated with the value of total customers for that country.
+                                   Also, a table will be populated with all the customers for the selected country.
+
+
+
